@@ -23,3 +23,4 @@ uv run main.py
 | 06 | [`deterministic`](06-deterministic/): the flag that signals whether a primitive is pure |
 | 07 | [Type annotations are the contract](07-type-contract/): how parameter and return types reach the LLM |
 | 08 | [Read the generated plan](08-read-the-plan/): the Python the LLM wrote, in `result.plan` |
+| 09 | [Read the execution trace](09-read-the-trace/): the plan after it ran, step by step, in `result.trace` |
