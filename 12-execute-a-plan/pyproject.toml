@@ -1,0 +1,13 @@
+[project]
+name = "osai-track-12-execute-a-plan"
+version = "0.1.0"
+description = "Track 12, execute a plan you already have: pass plan text to execute(), validation and all."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+    "pydantic>=2",
+]
+
+[tool.uv]
+package = false
