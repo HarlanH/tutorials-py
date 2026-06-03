@@ -43,7 +43,7 @@ class Calculator(PlanExecute):
 ```
 
 The type annotations are the LLM's contract, and the docstrings are its
-guidance. (You'll learn what `read_only` does in Track 2.)
+guidance.
 
 ## 3. Run it
 
@@ -70,5 +70,4 @@ Ollama runs locally, so **no API key is required**. Pull the model first:
 
 The LLM didn't do the arithmetic. It wrote a **plan**, a small program like
 `result = subtract(multiply(7, 8), 3)`, and your primitives ran it in plain
-Python. The full plan and a step-by-step trace are on the `result` too, via
-`result.plan` and `result.trace`, which we cover in Track 2.
+Python.

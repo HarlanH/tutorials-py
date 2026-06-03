@@ -1,0 +1,12 @@
+[project]
+name = "osai-track-02-swap-model"
+version = "0.1.0"
+description = "Track 2, Swap the local model: run Track 1's agent on a different Ollama model."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+]
+
+[tool.uv]
+package = false

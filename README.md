@@ -16,3 +16,4 @@ uv run main.py
 | # | Track |
 |---|-------|
 | 01 | [Hello, OpenSymbolicAI](01-hello/): the five-minute first win |
+| 02 | [Swap the local model](02-swap-model/): run Track 1's agent on a different model |
