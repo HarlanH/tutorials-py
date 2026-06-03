@@ -1,0 +1,13 @@
+[project]
+name = "osai-track-11-plan-without-executing"
+version = "0.1.0"
+description = "Track 11, plan without executing: generate a plan, review it, then run it."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+    "pydantic>=2",
+]
+
+[tool.uv]
+package = false
