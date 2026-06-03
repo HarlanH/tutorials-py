@@ -21,3 +21,4 @@ uv run main.py
 | 04 | [What `@primitive` actually does](04-primitive-gate/): the gate that makes a method callable |
 | 05 | [`read_only`](05-read-only/): the flag that signals whether a primitive modifies state |
 | 06 | [`deterministic`](06-deterministic/): the flag that signals whether a primitive is pure |
+| 07 | [Type annotations are the contract](07-type-contract/): how parameter and return types reach the LLM |
