@@ -69,8 +69,10 @@ uv run main.py
 Output:
 
 ```
+--- plan ---
 go_repeated = repeat(text="go", times=3)
 result = shout(text=go_repeated)
+--- result ---
 GOGOGO!
 ```
 
@@ -95,8 +97,10 @@ Annotate `times` as `str` instead of `int`. The body does not change.
 Now the signature tells the model `times` is a string, so it plans accordingly:
 
 ```
+--- plan ---
 go_thrice = repeat(text="go", times="3")
 result = shout(text=go_thrice)
+--- error ---
 can't multiply sequence by non-int of type 'str'
 ```
 

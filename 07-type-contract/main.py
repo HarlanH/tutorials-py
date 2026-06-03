@@ -10,32 +10,10 @@ Usage:
 
 from __future__ import annotations
 
-import json
-import urllib.error
-import urllib.request
-
 from textkit import TextKit
+from ollama import check_ollama
 
 from opensymbolicai.llm import LLMConfig
-
-OLLAMA_URL = "http://localhost:11434"
-
-
-def check_ollama(model: str) -> bool:
-    """Return True if Ollama is running and `model` is pulled, else print why."""
-    try:
-        with urllib.request.urlopen(f"{OLLAMA_URL}/api/tags", timeout=2) as resp:
-            tags = json.load(resp)
-    except urllib.error.URLError:
-        print("Ollama isn't running. Start the Ollama app (or run `ollama serve`).")
-        return False
-
-    installed = {m["name"] for m in tags.get("models", [])}
-    if model not in installed:
-        print(f"Model '{model}' isn't pulled. Run: ollama pull {model}")
-        return False
-
-    return True
 
 
 def main() -> None:
@@ -48,10 +26,14 @@ def main() -> None:
     agent = TextKit(llm=llm)
 
     result = agent.run("repeat the word go 3 times, then shout the result")
+
+    print("--- plan ---")
     print(result.plan)  # the generated program, before it runs
     if not result.success:
+        print("--- error ---")
         print(result.error)
         return
+    print("--- result ---")
     print(result.result)  # GOGOGO!
 
 
