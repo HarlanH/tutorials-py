@@ -1,0 +1,13 @@
+[project]
+name = "osai-track-03-cloud-provider"
+version = "0.1.0"
+description = "Track 3, Swap to a cloud provider: run the same agent on a hosted provider."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+    "python-dotenv>=1.0",
+]
+
+[tool.uv]
+package = false
