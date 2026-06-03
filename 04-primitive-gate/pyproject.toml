@@ -1,0 +1,12 @@
+[project]
+name = "osai-track-04-primitive-gate"
+version = "0.1.0"
+description = "Track 4, What @primitive actually does: the gate that makes a method callable."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+]
+
+[tool.uv]
+package = false
