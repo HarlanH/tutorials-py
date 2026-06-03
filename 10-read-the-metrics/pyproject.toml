@@ -1,0 +1,13 @@
+[project]
+name = "osai-track-10-read-the-metrics"
+version = "0.1.0"
+description = "Track 10, read the metrics: what a run cost in time and tokens."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+    "pydantic>=2",
+]
+
+[tool.uv]
+package = false

@@ -24,3 +24,4 @@ uv run main.py
 | 07 | [Type annotations are the contract](07-type-contract/): how parameter and return types reach the LLM |
 | 08 | [Read the generated plan](08-read-the-plan/): the Python the LLM wrote, in `result.plan` |
 | 09 | [Read the execution trace](09-read-the-trace/): the plan after it ran, step by step, in `result.trace` |
+| 10 | [Read the metrics](10-read-the-metrics/): what a run cost in time and tokens, in `result.metrics` |
