@@ -27,3 +27,4 @@ uv run main.py
 | 10 | [Read the metrics](10-read-the-metrics/): what a run cost in time and tokens, in `result.metrics` |
 | 11 | [Plan without executing](11-plan-without-executing/): generate a plan with `agent.plan`, review it, then run it |
 | 12 | [Execute a plan you already have](12-execute-a-plan/): pass plan text to `agent.execute`, validation and all |
+| 13 | [Analyze a plan's structure](13-analyze-a-plan/): read the primitive calls and `read_only` flags with `agent.analyze_plan` |
