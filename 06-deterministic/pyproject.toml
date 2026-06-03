@@ -1,0 +1,12 @@
+[project]
+name = "osai-track-06-deterministic"
+version = "0.1.0"
+description = "Track 6, deterministic: the flag that signals whether a primitive is a pure function."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+]
+
+[tool.uv]
+package = false
