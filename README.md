@@ -29,3 +29,4 @@ uv run main.py
 | 12 | [Execute a plan you already have](12-execute-a-plan/): pass plan text to `agent.execute`, validation and all |
 | 13 | [Analyze a plan's structure](13-analyze-a-plan/): read the primitive calls and `read_only` flags with `agent.analyze_plan` |
 | 14 | [Your first decomposition](14-first-decomposition/): teach the planner with a worked example via `@decomposition` |
+| 15 | [expanded_intent](15-expanded-intent/): describe a decomposition's approach, not just its intent |
