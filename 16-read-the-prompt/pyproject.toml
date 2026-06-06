@@ -1,0 +1,15 @@
+[project]
+name = "osai-track-16-read-the-prompt"
+version = "0.1.0"
+description = "Track 16, build_plan_prompt: read the prompt the LLM receives before it writes a plan."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+opensymbolicai-core = { path = "../../core-py" }

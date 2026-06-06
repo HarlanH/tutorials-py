@@ -1,0 +1,15 @@
+[project]
+name = "osai-track-19-design-execute-limits"
+version = "0.1.0"
+description = "Track 19, DesignExecute limits: max_total_primitive_calls and allow_break_continue."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+opensymbolicai-core = { path = "../../core-py" }
