@@ -16,10 +16,15 @@ difference is in [`main.py`](main.py):
 
 ## Run it
 
+Check the model size at [ollama.com/library](https://ollama.com/library) before
+pulling if disk space is a concern.
+
 ```bash
 ollama pull gemma4:e2b
 uv run main.py
 ```
+
+To remove a model when you no longer need it: `ollama rm gemma4:e2b`.
 
 ## What you'll see
 

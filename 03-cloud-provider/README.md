@@ -57,6 +57,19 @@ matching key:
 Model names change over time, so check the provider's own list for current
 options.
 
+## Troubleshooting
+
+**SSL certificate error on macOS** (`CERTIFICATE_VERIFY_FAILED`): Python
+installed from python.org ships without system SSL certificates. Fix it by
+running the certificate installer that came with Python:
+
+```bash
+open "/Applications/Python 3.13/Install Certificates.command"
+```
+
+Adjust the version number to match your Python install. After running it,
+`uv run main.py` should connect without errors.
+
 ## Takeaway
 
 The agent is decoupled from the provider. Local or cloud, Fireworks or OpenAI,
