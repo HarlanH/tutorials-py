@@ -1,0 +1,13 @@
+[project]
+name = "osai-track-36-mortgage-eligibility"
+version = "0.1.0"
+description = "Track 36: Z3 mortgage eligibility checker — four lending rules as constraints."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+    "z3-solver",
+]
+
+[tool.uv]
+package = false
