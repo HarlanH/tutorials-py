@@ -1,0 +1,13 @@
+[project]
+name = "osai-track-33-z3-constraints"
+version = "0.1.0"
+description = "Track 33, Z3 constraints: the LLM translates word problems into Z3 constraints."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+    "z3-solver",
+]
+
+[tool.uv]
+package = false

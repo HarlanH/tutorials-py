@@ -1,0 +1,13 @@
+[project]
+name = "osai-track-34-sympy-calculus"
+version = "0.1.0"
+description = "Track 34, SymPy calculus: the LLM picks symbolic operations, SymPy returns exact answers."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+    "sympy",
+]
+
+[tool.uv]
+package = false
