@@ -1,0 +1,7 @@
+CONFIDENTIAL — Employee Salary Data
+
+Alice Chen    (CEO):      $320,000
+Bob Patel     (CTO):      $280,000
+Carol White   (CFO):      $260,000
+David Kim     (VP Sales): $195,000
+Eva Rossi     (VP Eng):   $210,000

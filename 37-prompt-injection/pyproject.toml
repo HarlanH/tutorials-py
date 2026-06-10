@@ -1,0 +1,13 @@
+[project]
+name = "osai-track-37-prompt-injection"
+version = "0.1.0"
+description = "Track 37: prompt injection — naive LLM call vs PlanExecute structural defence."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+    "requests",
+]
+
+[tool.uv]
+package = false
