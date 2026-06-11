@@ -1,0 +1,12 @@
+[project]
+name = "osai-track-38-structured-memory"
+version = "0.1.0"
+description = "Track 38: structured memory -- facts stored as key-value pairs across sessions."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+]
+
+[tool.uv]
+package = false
