@@ -1,0 +1,17 @@
+[project]
+name = "osai-track-40-voice-date-agent"
+version = "0.1.0"
+description = "Track 40: voice date agent -- speak a date question, hear the answer."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+    "faster-whisper>=1.0",
+    "pyttsx3>=2.90",
+    "sounddevice>=0.4",
+    "soundfile>=0.12",
+    "numpy>=1.26",
+]
+
+[tool.uv]
+package = false
