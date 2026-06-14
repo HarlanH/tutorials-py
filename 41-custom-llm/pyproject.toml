@@ -1,0 +1,12 @@
+[project]
+name = "osai-track-41-custom-llm"
+version = "0.1.0"
+description = "Track 41: custom LLM subclass with an in-memory response cache."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+]
+
+[tool.uv]
+package = false
