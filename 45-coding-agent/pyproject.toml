@@ -1,0 +1,12 @@
+[project]
+name = "osai-track-45-coding-agent"
+version = "0.1.0"
+description = "Track 45: agent rewrites recursive programs as iterative and validates the output."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+]
+
+[tool.uv]
+package = false
