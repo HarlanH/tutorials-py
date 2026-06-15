@@ -1,0 +1,12 @@
+[project]
+name = "osai-track-46-nl-to-sql"
+version = "0.1.0"
+description = "Track 46: agent translates natural language questions into SQL and runs them."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opensymbolicai-core>=0.7",
+]
+
+[tool.uv]
+package = false
