@@ -18,7 +18,7 @@ from llm import OllamaLLM
 from ollama import check_ollama
 
 TEXT_MODEL   = "qwen2.5-coder:7b"
-VISION_MODEL = "gemma4:e2b"
+VISION_MODEL = "moondream"  # small (1.9B) but reliable vision model
 
 SAMPLE_IMAGE = os.path.join(os.path.dirname(__file__), "sample.jpg")
 SAMPLE_IMAGE_URL = "https://www.gstatic.com/webp/gallery/1.jpg"

@@ -24,7 +24,9 @@ def check_ollama(model: str) -> bool:
         return False
 
     installed = {m["name"] for m in tags.get("models", [])}
-    if model not in installed:
+    # Check both exact match and with :latest suffix
+    model_with_tag = model if ":" in model else f"{model}:latest"
+    if model not in installed and model_with_tag not in installed:
         print(f"Model '{model}' isn't pulled. Run: ollama pull {model}")
         return False
 
