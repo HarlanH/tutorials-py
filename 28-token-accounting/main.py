@@ -36,6 +36,10 @@ def main() -> None:
     for task in TASKS:
         agent = Calc(llm=llm)
         result = agent.run(task)
+        if not result.success:
+            print(f"Task failed: {task}")
+            print(f"Error: {result.error}")
+            return
         t = result.metrics.plan_tokens
         rows.append((task, result.result, t.input_tokens, t.output_tokens, t.total_tokens))
 
