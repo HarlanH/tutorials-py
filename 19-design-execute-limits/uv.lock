@@ -23,32 +23,15 @@ wheels = [
 [[package]]
 name = "opensymbolicai-core"
 version = "0.8.0"
-source = { directory = "../../core-py" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pydantic" },
     { name = "python-dotenv" },
     { name = "tqdm" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "pydantic", specifier = ">=2.0" },
-    { name = "python-dotenv", specifier = ">=1.2.1" },
-    { name = "tqdm", specifier = ">=4.67.1" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "build", specifier = ">=1.4.0" },
-    { name = "mkdocs-material", specifier = ">=9.7.1" },
-    { name = "mkdocstrings", extras = ["python"], specifier = ">=1.0.2" },
-    { name = "mypy", specifier = ">=1.0" },
-    { name = "pre-commit", specifier = ">=4.5.1" },
-    { name = "pytest", specifier = ">=8.0" },
-    { name = "pytest-cov", specifier = ">=4.0" },
-    { name = "python-semantic-release", specifier = ">=10.5.3" },
-    { name = "ruff", specifier = ">=0.9" },
-    { name = "twine", specifier = ">=6.2.0" },
+sdist = { url = "https://files.pythonhosted.org/packages/9b/c2/50760c5436cfd21f7a21daaaeb87423208fedeef45979566d96d5dbac924/opensymbolicai_core-0.8.0.tar.gz", hash = "sha256:f0f74a25ef2930e9542ec5df7b94709a95f172cafcd1c465f9648986d9a627f0", size = 105377, upload-time = "2026-06-04T17:06:37.198Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/80/e7/ae09a15bfeb9124c07510ee0123e25a3a71218888a4a743a837a02525a31/opensymbolicai_core-0.8.0-py3-none-any.whl", hash = "sha256:2460c1439561265c5bf193fe9e0009d7dd1fa021424d48d188507eadcf6c1a30", size = 67815, upload-time = "2026-06-04T17:06:36.19Z" },
 ]
 
 [[package]]
@@ -60,7 +43,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "opensymbolicai-core", directory = "../../core-py" }]
+requires-dist = [{ name = "opensymbolicai-core", specifier = ">=0.7" }]
 
 [[package]]
 name = "pydantic"
