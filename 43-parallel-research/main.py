@@ -52,6 +52,7 @@ def fetch_article(topic: str, key: str) -> None:
 
 
 def ensure_articles() -> None:
+    Path("articles").mkdir(exist_ok=True)
     missing = [
         (topic, key)
         for key, topic in WIKIPEDIA_TOPICS.items()
