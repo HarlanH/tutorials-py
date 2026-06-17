@@ -1,9 +1,4 @@
-"""Preflight check that Ollama is running and the requested model is pulled.
-
-Each native track imports `check_ollama` from here so its `main.py` can fail
-with a clear message instead of a confusing error when Ollama is down or the
-requested model has not been pulled.
-"""
+"""Preflight check that Ollama is running and the requested model is pulled."""
 
 from __future__ import annotations
 

@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "opensymbolicai-core>=0.7",
+    "python-dotenv>=1.1",
 ]
 
 [tool.uv]
